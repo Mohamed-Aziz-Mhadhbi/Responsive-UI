@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_ui/Responsive/responsive.dart';
 import 'already_memeber_signIn.dart';
 import 'signup_benefits.dart';
 import 'singup_form.dart';
@@ -13,12 +14,19 @@ class RegisterPage extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Expanded(child: SignupBenefits()),
+            if (!Responsive.isMobile(context))
+              Expanded(
+                flex: Responsive.isTablet(context) ? 2 : 1,
+                child: SignupBenefits(),
+              ),
             Expanded(
               child: Column(
                 children: [
-                  Row(children: [Spacer(), AlreadyMemeberSignIn(),]),
-                  Expanded(child: SignInScreen())
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [Spacer(), AlreadyMemeberSignIn()],
+                  ),
+                  Expanded(child: SignInScreen()),
                 ],
               ),
             ),
