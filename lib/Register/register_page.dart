@@ -18,7 +18,7 @@ class RegisterPage extends StatelessWidget {
               child: Column(
                 children: [
                   Row(children: [Spacer(), AlreadyMemeberSignIn(),]),
-                  Expanded(child: SingupForm())
+                  Expanded(child: SignInScreen())
                 ],
               ),
             ),
