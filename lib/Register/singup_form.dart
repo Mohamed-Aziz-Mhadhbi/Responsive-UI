@@ -79,7 +79,7 @@ class SignInForm extends StatelessWidget {
               border: authOutlineInputBorder,
               enabledBorder: authOutlineInputBorder,
               focusedBorder: authOutlineInputBorder.copyWith(
-                borderSide: const BorderSide(color: Color(0xFFFF7643)),
+                borderSide: const BorderSide(color: Colors.green),
               ),
             ),
           ),
@@ -102,7 +102,7 @@ class SignInForm extends StatelessWidget {
                 border: authOutlineInputBorder,
                 enabledBorder: authOutlineInputBorder,
                 focusedBorder: authOutlineInputBorder.copyWith(
-                  borderSide: const BorderSide(color: Color(0xFFFF7643)),
+                  borderSide: const BorderSide(color: Colors.green),
                 ),
               ),
             ),
@@ -112,7 +112,7 @@ class SignInForm extends StatelessWidget {
             onPressed: () {},
             style: ElevatedButton.styleFrom(
               elevation: 0,
-              backgroundColor: const Color(0xFFFF7643),
+              backgroundColor:  Colors.green,
               foregroundColor: Colors.white,
               minimumSize: const Size(double.infinity, 48),
               shape: const RoundedRectangleBorder(
@@ -170,7 +170,7 @@ class NoAccountText extends StatelessWidget {
           },
           child: const Text(
             "Sign Up",
-            style: TextStyle(color: Color(0xFFFF7643)),
+            style: TextStyle(color: Colors.green),
           ),
         ),
       ],

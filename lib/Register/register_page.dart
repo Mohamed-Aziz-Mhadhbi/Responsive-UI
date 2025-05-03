@@ -20,6 +20,7 @@ class RegisterPage extends StatelessWidget {
                 child: SignupBenefits(),
               ),
             Expanded(
+              flex: 3,
               child: Column(
                 children: [
                   Row(
